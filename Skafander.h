@@ -1,15 +1,14 @@
 #ifndef H_skafander
 #define H_skafander
 #include <string>
+using namespace std;
 
-namespace world
-{
 	class Skafander
 	{
 	public:
 
 		///
-		///konstruktor domyœlny 
+		///konstruktor domyÅ›lny 
 		///
 		Skafander();
 
@@ -18,7 +17,18 @@ namespace world
 		///
 		///@param weight- nadana waga
 		///
-		Skafander(float weight);
+		///@param size- nadany rozmiar
+		///
+		///@param colour- nadany kolor
+		///
+		///@param lenght- nadana dÅ‚ugoÅ›Ä‡
+		///
+		///@param width- nadana szerokoÅ›Ä‡
+		///
+		///@param purpose- nadanie przeznaczenia 
+		///
+		///@param material- nadanie materiaÅ‚u
+		Skafander(float weight, char size, string colour, float legth, float width, string purpose, string material);
 
 		///
 		///destruktor 
@@ -29,18 +39,14 @@ namespace world
 
 		float m_weight;
 		char  m_size;
-		char  m_kolor;
+		string  m_colour;
 		float m_length;
 		float m_width;
-		char  m_purpose;
+		string  m_purpose;
+		string m_material;
 
-
-		//kolor
-			///d³ugoœæ
-			///materia³
-			///waga
 
 	};
-}//world
+
 
 #endif H_skafander
