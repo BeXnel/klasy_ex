@@ -17,18 +17,49 @@ using namespace std;
 		///
 		///@param weight- nadana waga
 		///
-		///@param size- nadany rozmiar
-		///
-		///@param colour- nadany kolor
-		///
-		///@param lenght- nadana długość
-		///
-		///@param width- nadana szerokość
-		///
-		///@param purpose- nadanie przeznaczenia 
-		///
-		///@param material- nadanie materiału
 		Skafander(float weight, char size, string colour, float legth, float width, string purpose, string material);
+
+		///
+		///Metoda ustawia przeznaczenie skafandra
+		///
+		///@param purpose- przeznaczenie
+		void setPurpouse(string purpouse);
+
+		///
+		///Metoda ustawia material skafandra
+		///
+		///@param material- material
+		void setMaterial(string material);
+
+		///
+		///Metoda ustawia szerokosc skafandra
+		///
+		///@param width- szerokosc
+		void setWidth(float width);
+
+		///
+		///metoda ustawia dlugosc skafandra
+		///
+		///@param length- dlugosc 
+		void setLength(float length);
+
+		///
+		///Metoda ustawia kolor skafandra
+		///
+		///@param colour- kolor
+		void setColour(string colour);
+
+		///
+		///Metoda ustawia rozmiar skafandra
+		///
+		///@param size- rozmiar
+		void setSize(char size);
+
+		///
+		///Metoda ustawia wage skafandra
+		///
+		///@param weight- waga
+		void setWeight(float weight);
 
 		///
 		///destruktor 
@@ -38,11 +69,11 @@ using namespace std;
 	private:
 
 		float m_weight;
-		char  m_size;
+		string  m_size;
 		string  m_colour;
 		float m_length;
 		float m_width;
-		string  m_purpose;
+		string m_purpouse;
 		string m_material;
 
 
