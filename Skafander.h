@@ -17,7 +17,18 @@ using namespace std;
 		///
 		///@param weight- nadana waga
 		///
-		Skafander(float weight, char size, string colour, float legth, float width, string purpose, string material);
+		///@param size- nadany rozmiar
+		///
+		///@param colour- nadany kolor
+		///
+		///@param length- nadana dlugosc
+		///
+		///@param width- nadana szerokosc
+		///
+		///@param purpose- nadane przeznaczenie
+		///
+		///@param material- nadany material
+		Skafander(float weight, string size, string colour, float legth, float width, string purpose, string material);
 
 		///
 		///Metoda ustawia przeznaczenie skafandra
